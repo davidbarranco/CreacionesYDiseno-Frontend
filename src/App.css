@@ -1,0 +1,655 @@
+/* ================================
+   ESTILOS GENERALES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 60px;
+
+    background-color: #111;
+    color: white;
+}
+
+.navbar-logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #ff4f64;
+}
+
+
+/* ================================
+   HOME
+================================ */
+
+.home {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+
+    background: linear-gradient(135deg,
+            #111,
+            #333);
+
+    color: white;
+
+    text-align: center;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home-subtitle {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #ff4f64;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home h1 {
+    margin-bottom: 20px;
+
+    font-size: 52px;
+}
+
+.home p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home button {
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #ff4f64;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home button:hover {
+    background-color: #e63d52;
+}
+
+
+/* ================================
+   SECCIÓN USUARIOS
+================================ */
+
+.usuarios-section {
+    max-width: 1100px;
+
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.usuarios-section h2 {
+    margin-bottom: 20px;
+}
+
+.usuarios-lista {
+    margin-top: 30px;
+}
+
+.usuarios-lista ul {
+    padding-left: 20px;
+}
+
+.usuarios-lista li {
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #111;
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+    }
+
+    .home {
+        padding: 40px 25px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .usuarios-section {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+}
+
+/* ================================
+   FORMULARIO DE REGISTRO
+================================ */
+
+.registro-container {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 50px;
+
+    align-items: center;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    background-color: #fafafa;
+}
+
+.registro-info {
+    padding: 20px;
+}
+
+.registro-subtitle {
+    color: #ff4f64;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.registro-info h2 {
+    margin: 15px 0;
+
+    font-size: 36px;
+}
+
+.registro-info p {
+    color: #666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* FORMULARIO */
+
+.registro-form {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #ff4f64;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 79, 100, 0.1);
+}
+
+
+/* BOTÓN */
+
+.registro-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #ff4f64;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.registro-button:hover {
+    background-color: #e63d52;
+}
+
+.registro-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* MENSAJES */
+
+.mensaje-exito {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    background-color: #e8f8ee;
+
+    color: #18733b;
+
+    text-align: center;
+}
+
+.mensaje-error {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    background-color: #fdeaea;
+
+    color: #b42318;
+
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .registro-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .registro-info h2 {
+        font-size: 30px;
+    }
+}
+
+/* ================================
+   CATÁLOGO DE PRODUCTOS
+================================ */
+
+.productos-section {
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    padding: 20px;
+}
+
+.productos-header {
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.productos-header>span {
+    color: #ff4f64;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.productos-header h2 {
+    margin: 12px 0;
+
+    font-size: 38px;
+}
+
+.productos-header p {
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* GRID */
+
+.productos-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* TARJETA */
+
+.producto-card {
+    overflow: hidden;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGEN */
+
+.producto-imagen {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+/* INFORMACIÓN */
+
+.producto-info {
+    padding: 22px;
+}
+
+.producto-categoria {
+    color: #ff4f64;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.producto-info h3 {
+    margin: 8px 0;
+
+    font-size: 21px;
+}
+
+.producto-descripcion {
+    min-height: 65px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* PRECIO Y BOTÓN */
+
+.producto-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.producto-precio {
+    font-size: 20px;
+}
+
+.producto-button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #ff4f64;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.producto-button:hover {
+    background-color: #e63d52;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .productos-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .productos-header h2 {
+        font-size: 30px;
+    }
+}
+
+/* ========================================
+   PRODUCTO DEL CARRITO
+======================================== */
+
+.carrito-producto {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 15px;
+    align-items: center;
+
+    padding: 12px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Imagen pequeña al lado */
+.carrito-producto>img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+/* Información */
+.carrito-producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrito-producto-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.carrito-producto-info p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+/* ===== IMAGEN PEQUEÑA DEL CARRITO ===== */
+
+/* IMAGEN DE LA CAMISETA EN EL CARRITO */
+
+section#carrito .carrito-producto>img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
